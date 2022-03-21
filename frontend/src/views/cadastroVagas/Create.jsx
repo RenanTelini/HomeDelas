@@ -49,7 +49,7 @@ export default function Create(){
             <form>
                 <fieldset>
                     <legend>
-                        <h2 className="text-center">{id ? "Editar" : "Criar"}</h2>
+                        <h2 className="text-center">{id ? "Editar" : "Crie uma nova vaga"}</h2>
                     </legend>
 
                     {/* ATRIBUTO: nome_empresa */}
@@ -70,7 +70,7 @@ export default function Create(){
                     <div className="mb-3">
                         <label htmlFor="linkedin_empresa" className="form-label">Contato da empresa:</label>
 
-                        <input type="text" id="linkedin_empresa" className="form-control" placeholder="Ex.: Linkedln da empresa" value={linkedin_empresa} onChange= { (e) => setLinkedln_empresa(e.target.value) } />
+                        <input type="url" id="linkedin_empresa" className="form-control" placeholder="Ex.: Linkedln da empresa" value={linkedin_empresa} onChange= { (e) => setLinkedln_empresa(e.target.value) } />
                     </div>
 
                     {/* ATRIBUTO: descricao_vaga */}
@@ -85,7 +85,7 @@ export default function Create(){
 
                         <label htmlFor="vaga_link" className="form-label">Acesse a vaga pelo link:</label>
 
-                        <input type="text" id="vaga_link" className="form-control" placeholder="Link"
+                        <input type="url" id="vaga_link" className="form-control" placeholder="Link"
                         value={vaga_link} onChange={ (e) => setVaga_link(e.target.value)} />
                     </div>
 

@@ -3,6 +3,18 @@
   height: 60px;
 }
 
+a{
+  text-decoration: none;
+}
+
+img{
+  
+}
+
+tbody{
+  display: flex;
+}
+
 footer {
     padding: 20px;
     width: 100%;
