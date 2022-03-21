@@ -1,9 +1,32 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Home from "./views/Home";
+
+import CadastroVagas from "./views/cadastroVagas";
+import CadastroVagasCreate from "./views/cadastroVagas/Create";
+
+import Contatos from "./views/Contatos";
+
+import Menu from "./components/Menu";
+import Footer from "./components/Footer";
+
+import "./style.css"
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <BrowserRouter>
+      <main>
+        <Menu/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/CadastroVagas" element={<CadastroVagas/>} />
+          <Route path="/CadastroVagas-Create" element={<CadastroVagasCreate/>}/>
+          <Route path="/CadastroVagas-Update/:id" element={<CadastroVagasCreate/>}/>
+          <Route path="./views/Contatos" element={<Contatos />}/>
+        </Routes>
+      </main>
+      <Footer/>
+    </BrowserRouter>
   );
 }
 

@@ -56,7 +56,7 @@ export default function Create(){
                     <div className="mb-3">
                         <label htmlFor="nome_empresa" className="form-label">Empresa:</label>
 
-                        <input type="text" id="nome_empresa" className="form-control" placeholder="Nome da empresa" value={setNome_empresa(e.target.value) }/>
+                        <input type="text" id="nome_empresa" className="form-control" placeholder="Nome da empresa" value={nome_empresa} onChange={ (e) => setNome_empresa(e.target.value)}/>
                     </div>
 
                     {/* ATRIBUTO: nome_vagas */}
@@ -68,14 +68,14 @@ export default function Create(){
 
                     {/* ATRIBUTO: linkedln_empresa */}
                     <div className="mb-3">
-                        <label htmlFor="linkedin_empresa" className="form-control">Linkedin da empresa:</label>
+                        <label htmlFor="linkedin_empresa" className="form-label">Contato da empresa:</label>
 
-                        <input type="text" id="linkedin_empresa" className="form-control" placeholder="Linkedln da empresa" value={linkedin_empresa} onChange= { (e) => setLinkedln_empresa(e.target.value) } />
+                        <input type="text" id="linkedin_empresa" className="form-control" placeholder="Ex.: Linkedln da empresa" value={linkedin_empresa} onChange= { (e) => setLinkedln_empresa(e.target.value) } />
                     </div>
 
                     {/* ATRIBUTO: descricao_vaga */}
                     <div className="mb-3">
-                        <label htmlFor="descricao_vaga" className="form-control">Descrição da vaga:</label>
+                        <label htmlFor="descricao_vaga" className="form-label">Descrição da vaga:</label>
 
                         <input type="text" id="descricao_vaga" className="form-control" placeholder="Descrição da vaga" value={descricao_vaga} onChange= { (e) => setDescricao_vaga(e.target.value) } />
                     </div>
@@ -83,7 +83,7 @@ export default function Create(){
                     {/* ATRIBUTO: vaga_link */}
                     <div className="mb-3">
 
-                        <label htmlFor="vaga_link" className="form-control">Acesse a vaga pelo link:</label>
+                        <label htmlFor="vaga_link" className="form-label">Acesse a vaga pelo link:</label>
 
                         <input type="text" id="vaga_link" className="form-control" placeholder="Link"
                         value={vaga_link} onChange={ (e) => setVaga_link(e.target.value)} />

@@ -27,17 +27,17 @@ export default function Menu() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="" className="nav-link text-dark">
+              <Link to="/cadastroVagas" className="nav-link text-dark">
               Vagas
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/cadastroVagas-Create" className="nav-link text-dark">
-              Cadastro de novas vagas
+              <Link to="/CadastroVagas-Create" className="nav-link text-dark">
+              Cadastro de vagas
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="" className="nav-link text-dark">
+              <Link to="./views/Contatos" className="nav-link text-dark">
               Contatos
               </Link>
             </li>
