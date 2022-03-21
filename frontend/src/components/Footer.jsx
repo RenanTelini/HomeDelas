@@ -1,9 +1,13 @@
 import React from "react";
+import logo from "../img/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer>
-      <img src="https://recodepro.org.br/wp-content/uploads/2022/01/recode_pro-logo-1.svg" alt="recodePro" />
+      <Link to="/" className="navbar-brand">
+          <img id="logo" src={logo} alt="Logo HomeDelas" />
+      </Link>
     </footer>
   );
 }

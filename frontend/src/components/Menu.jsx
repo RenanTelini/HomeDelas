@@ -1,13 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../img/logo.png";
 
 export default function Menu() {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light">
+    <nav className="navbar navbar-expand-md ">
+
       <div className="container">
-        <Link className="navbar-brand" to="/">
-          HomeDelas
+
+        <Link to="/" className="navbar-brand">
+          <img id="logo" src={logo} alt="Logo HomeDelas" />
         </Link>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -37,7 +41,12 @@ export default function Menu() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="./views/Contatos" className="nav-link text-dark">
+              <Link to="/Cursos" className="nav-link text-dark">
+                Cursos
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/Contatos" className="nav-link text-dark">
               Contatos
               </Link>
             </li>

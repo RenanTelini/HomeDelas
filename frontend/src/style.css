@@ -1,0 +1,14 @@
+#logo{
+  width: 60px;
+  height: 60px;
+}
+
+footer {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  footer img {
+    height: 100px;
+  }

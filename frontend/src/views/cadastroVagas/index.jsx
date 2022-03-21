@@ -31,17 +31,20 @@ export default function Index(){
                 <h1 className="container">Cadastro de vagas</h1>
             </header>
             <div className="container p-5">
-                <Link to="/CadastroVagas-Create" className="btn btn-primary">Criar Vaga</Link>
+
+                {/* Botão "Criar" */}
+                {/* <Link to="/CadastroVagas-Create" className="btn btn-primary">Criar Vaga</Link> */}
+
                 <div className="table-responsive">
                     <table className="table table-hover table-sm">
                         <thead>
                             <tr>
                                 <th>Id</th>
                                 <th>Empresa</th>
-                                <th>Vaga/Nome da vaga</th>
-                                <th>Contato empresa/Linkedln</th>
+                                <th>Vaga</th>
                                 <th>Descrição</th>
-                                <th>Vaga/Link</th>
+                                <th>Linkedln empresa</th>
+                                <th>Link para se candidatar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,8 +53,8 @@ export default function Index(){
                                     <td>{cadastro.id}</td>
                                     <td>{cadastro.nome_empresa}</td>
                                     <td>{cadastro.nome_vaga}</td>
-                                    <td>{cadastro.linkedin_empresa}</td>
                                     <td>{cadastro.descricao_vaga}</td>
+                                    <td>{cadastro.linkedin_empresa}</td>
                                     <td>{cadastro.vaga_link}</td>
                                     <td className="d-flex">
                                         <Link 
