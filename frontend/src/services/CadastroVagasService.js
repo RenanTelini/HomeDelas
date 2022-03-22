@@ -20,7 +20,7 @@ class CadastroVagas{
     }
 
     deleteCadastroVagas(cadastroVagasId){
-        return axios.delete(cadastroVagasId) + "/" + cadastroVagasId;
+        return axios.delete(CADASTROVAGAS_API_URL + "/" + cadastroVagasId);
     }
 }
 
