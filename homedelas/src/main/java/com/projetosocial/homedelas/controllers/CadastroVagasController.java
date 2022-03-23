@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.projetosocial.homedelas.entities.CadastroVagas;
 import com.projetosocial.homedelas.repositories.CadastroVagasRepository;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/cadastroVagas")
 public class CadastroVagasController {

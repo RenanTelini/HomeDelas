@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const CADASTROVAGAS_API_URL = "http://localhost:8080/cadastroVagas";
+const CADASTROVAGAS_API_URL = "https://backend-homedelas.herokuapp.com/cadastroVagas";
 
 class CadastroVagas{
     getAllCadastroVagas(){

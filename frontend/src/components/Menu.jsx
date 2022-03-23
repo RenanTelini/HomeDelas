@@ -37,7 +37,7 @@ export default function Menu() {
             </li>
             <li className="nav-item">
               <Link to="/CadastroVagas-Create" className="nav-link text-dark">
-              Cadastro de vagas
+              Cadastrar vagas
               </Link>
             </li>
             <li className="nav-item">
